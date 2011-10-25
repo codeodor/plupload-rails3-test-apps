@@ -5,7 +5,7 @@ PluploadRails3Test::Application.routes.draw do
 
   resources :albums
 
-  resources :blahs
+  match 'plupload_rails/_plupload_uploader', :controller=>'plupload_rails', :action=>'_plupload_uploader', :as=>'pluploader'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
