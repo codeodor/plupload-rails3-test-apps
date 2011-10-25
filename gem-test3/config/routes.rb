@@ -1,4 +1,6 @@
 PluploadRails3Test::Application.routes.draw do
+  resources :attachments
+
   resources :pictures
 
   resources :albums
