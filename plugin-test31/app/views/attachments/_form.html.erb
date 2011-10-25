@@ -1,0 +1,28 @@
+<%= form_for(@attachment) do |f| %>
+  <% if @attachment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@attachment.errors.count, "error") %> prohibited this attachment from being saved:</h2>
+
+      <ul>
+      <% @attachment.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <%= plupload(@attachment, :payload, options={:plupload_container=>'uploader'}) %>
+  <div id="uploader" name="uploader" style="width: 100%;"></div>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :payload %><br />
+    <%= f.text_field :payload %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
