@@ -1,5 +1,5 @@
 PATH
-  remote: ../plupload-rails3
+  remote: ../../plupload-rails3
   specs:
     plupload-rails3 (0.0.4)
 

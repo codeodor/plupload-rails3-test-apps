@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.5'
-gem 'plupload-rails3', :path=>'../plupload-rails3'
+gem 'plupload-rails3', :path=>'../../plupload-rails3'
 
 
 # Bundle edge Rails instead:
