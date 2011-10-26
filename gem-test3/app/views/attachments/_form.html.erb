@@ -11,7 +11,7 @@
     </div>
   <% end %>
   
-  <%= plupload(@attachment, :payload, options={:plupload_container=>'uploader'}) %>
+  <%= plupload(@attachment, :payload, options={:plupload_container=>'uploader', :runtimes=>'flash'}) %>
   <div id="uploader" name="uploader" style="width: 100%;"></div>
   
   <div class="field">
