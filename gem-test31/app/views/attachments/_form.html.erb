@@ -1,4 +1,4 @@
-<%= plupload(@attachment, :payload, options={:plupload_container=>'uploader'}) %>
+<%= plupload(@attachment, :payload, options={:plupload_container=>'uploader', :params => {:one=>1, :two=>2} }) %>
 <div id="uploader" name="uploader" style="width: 100%;"></div>
 
 <%= form_for(@attachment) do |f| %>
